@@ -1,0 +1,38 @@
+<meta charset ="UTF-8" >
+
+<script>
+
+function pulaLinha() {
+     document.write('<br><br>'); 
+
+}
+
+function mostra (frase){
+    
+    document.write(frase);     
+    pulaLinha();
+
+}
+//3
+
+var totalFamiliares = parseInt(prompt("Quantidade de familiares ?"));
+
+var numero = 1 ;
+
+var toralIdades = 0; 
+
+// 1 é menor igual a 3 ?
+
+while(numero  <= totalFamiliares){
+   
+    var idadeFamiliar = parseInt(prompt("Informe a idade do familiar"));
+    //Incrementou o número e 0 agora vale 2
+    totalIdades = toralIdades + idadeFamiliar;
+    numero++; 
+}
+
+var mediaDasIdades =totalIdades/totalFamiliares;
+mostra("A média das idades dos familiares é" + mediaDasIdades);
+mostra("FIM");
+
+</script>
